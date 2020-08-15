@@ -1,0 +1,133 @@
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+h1 {
+  font-size: 30px;
+  margin-top: 60px;
+  color: white;
+  font-weight: 400;
+}
+h2 {
+  font-size: 16px;
+  color: white;
+}
+h3 {
+  font-size: 100px;
+  font-weight: 200;
+  color: yellow;
+  margin-top: -20px;
+}
+hr {
+  margin: -50px 300px 100px 300px;
+  background-color: #04befe;
+  padding-bottom: 2px;
+}
+ul {
+  list-style: none;
+  text-align: center;
+  padding: 10px 0;
+  margin: -50px 0 100px 0;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  letter-spacing: 1px;
+  background-color: #04c0fe56;
+  border-radius: 3px;
+}
+li {
+  display: inline;
+  margin: 25px;
+}
+#current-button {
+  font-size: 14px;
+  position: absolute;
+  text-transform: uppercase;
+  margin-left: 28px;
+  top: 20px;
+  left: 325px;
+  padding: 9px 20px;
+  border-radius: 50px;
+  color: rgb(0, 105, 196);
+  background-color: transparent;
+  border: solid 2px rgb(0, 105, 196);
+  transition: all 150ms ease-in-out;
+  cursor: pointer;
+}
+#current-button:hover {
+  color: white;
+  background-color: rgb(0, 105, 196);
+}
+
+#time {
+  text-align: center;
+  color: rgb(0, 105, 196);
+}
+.search {
+  font-size: 14px;
+  padding: 9px 20px;
+  text-transform: uppercase;
+  margin: 0 10px 0 5px;
+  border-radius: 50px;
+  color: white;
+  border: solid 2px rgb(0, 105, 196);
+  background-color: rgb(0, 105, 196);
+
+  transition: all 150ms ease-in-out;
+  cursor: pointer;
+}
+.search:hover {
+  border: solid 2px rgb(1, 68, 126);
+  background-color: rgb(1, 68, 126);
+  color: white;
+}
+#city-input {
+  border-radius: 2px;
+  padding: 5px;
+}
+.degrees {
+  padding: 50px;
+}
+.temp-buttons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px;
+  color: grey;
+}
+.card-body {
+  height: auto;
+}
+.col-md-2 {
+  text-align: center;
+}
+
+.icon {
+  font-size: 30px;
+  padding: 20px;
+  color: white;
+}
+
+.container {
+  margin: 30px auto;
+}
+.col-md-2 {
+  color: white;
+  font-weight: 600;
+  padding: 20px;
+}
+
+.night {
+  font-weight: 300;
+}
+.current {
+  background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+  border: none;
+}
+.forcast {
+  border: none;
+  background: none;
+}
+.btn {
+  color: rgba(255, 255, 255, 0.5);
+}
