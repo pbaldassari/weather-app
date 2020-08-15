@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style2.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/84cb205986.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card current">
+        <div class="card-body">
+          <div>
+            <form id="form-input">
+              <label for="city"></label>
+              <input type="text" id="city-input" placeholder="Enter a City" />
+
+              <input class="search" type="submit" value="Search" />
+            </form>
+          </div>
+          <div>
+            <button id="current-button">
+              Current Location
+            </button>
+          </div>
+          <div class="temp-buttons">
+            <span class="units">
+              <a href="#" id="fahrenheit-link">°F</a> |
+              <a href="#" id="celsius-link">°C</a>
+            </span>
+          </div>
+
+          <h1 class="city-name" id="name-city">
+            ----
+          </h1>
+          <p id="time">Date</p>
+          <h2 id="weather">
+            SUNNY
+          </h2>
+          <h3 class="degrees">
+            0°F
+          </h3>
+
+          <ul>
+            <li id="humidity">
+              Humidity: 0%
+            </li>
+            <li id="wind">
+              Wind: 0 km/h
+            </li>
+          </ul>
+          <div class="card forcast">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-2 active">
+                  <h2 class="card-title">WED</h2>
+                  <div class="icon">
+                    <i class="fas fa-sun"></i>
+                  </div>
+                  <p class="card-text">68°<span class="night">/ 51°</span></p>
+                </div>
+                <div class="col-md-2">
+                  <h2 class="card-title">THUR</h2>
+                  <div class="icon">
+                    <i class="fas fa-cloud-sun"></i>
+                  </div>
+                  <p class="card-text">65°<span class="night">/ 48°</span></p>
+                </div>
+                <div class="col-md-2">
+                  <h2 class="card-title">FRI</h2>
+                  <div class="icon">
+                    <i class="fas fa-sun"></i>
+                  </div>
+                  <p class="card-text">75°<span class="night">/ 51°</span></p>
+                </div>
+                <div class="col-md-2">
+                  <h2 class="card-title">SAT</h2>
+                  <div class="icon">
+                    <i class="fas fa-sun"></i>
+                  </div>
+                  <p class="card-text">79°<span class="night">/ 52°</span></p>
+                </div>
+                <div class="col-md-2">
+                  <h2 class="card-title">SUN</h2>
+                  <div class="icon">
+                    <i class="fas fa-cloud-sun"></i>
+                  </div>
+                  <p class="card-text">62°<span class="night">/ 44°</span></p>
+                </div>
+                <div class="col-md-2">
+                  <h2 class="card-title">MON</h2>
+                  <div class="icon">
+                    <i class="fas fa-cloud-showers-heavy"></i>
+                  </div>
+                  <p class="card-text">62°<span class="night">/ 42°</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="src/index.js"></script>
+</html>
