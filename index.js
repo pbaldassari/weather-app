@@ -115,12 +115,12 @@ function displayPosition(position) {
   let longitude = position.coords.longitude;
   let units = "imperial";
   let apiKey = "74b46494188e9abc362ff59069b258f0";
-  let apiUrl = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${units}`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${units}`;
 
   axios.get(apiUrl).then(showWeather);
 }
-let currentLocationsButton = document.querySelector("#current-button");
-currentLocationsButton.addEventListener("click", getCurrentLocation);
+//let currentLocationsButton = document.querySelector("#current-button");
+//currentLocationsButton.addEventListener("click", getCurrentLocation);
 
 let form = document.querySelector("#form-input");
 form.addEventListener("submit", search);
