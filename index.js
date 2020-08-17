@@ -89,8 +89,8 @@ function showWeather(response) {
   weatherType.innerHTML = `${description.toUpperCase()}`;
 }
 
-let currentLocationButton = document.querySelector("#current-button");
-currentLocationButton.addEventListener("click", showWeather);
+//let currentLocationButton = document.querySelector("#current-button");
+//currentLocationButton.addEventListener("click", showWeather);
 
 function searchCity(city) {
   let apiKey = "74b46494188e9abc362ff59069b258f0";
@@ -119,8 +119,8 @@ function displayPosition(position) {
 
   axios.get(apiUrl).then(showWeather);
 }
-//let currentLocationsButton = document.querySelector("#current-button");
-//currentLocationsButton.addEventListener("click", getCurrentLocation);
+let currentLocationsButton = document.querySelector("#current-button");
+currentLocationsButton.addEventListener("click", getCurrentLocation);
 
 let form = document.querySelector("#form-input");
 form.addEventListener("submit", search);
