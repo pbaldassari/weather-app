@@ -105,10 +105,6 @@ function search(event) {
   let searchCityName = document.querySelector("#city-input").value;
   searchCity(searchCityName);
 }
-function getCurrentLocation(event) {
-  event.preventDefault();
-  navigator.geolocation.getCurrentPosition(displayPosition);
-}
 
 function displayPosition(position) {
   let latitude = position.coords.latitude;
@@ -121,6 +117,11 @@ function displayPosition(position) {
 }
 let currentLocationsButton = document.querySelector("#current-button");
 currentLocationsButton.addEventListener("click", getCurrentLocation);
+
+function getCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(displayPosition);
+}
 
 let form = document.querySelector("#form-input");
 form.addEventListener("submit", search);
