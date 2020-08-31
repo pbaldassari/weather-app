@@ -39,11 +39,15 @@ li {
   display: inline;
   margin: 25px;
 }
+
+#code {
+  text-align: center;
+}
 #current-button {
   font-size: 14px;
-  position: absolute;
+
   text-transform: uppercase;
-  margin-left: 28px;
+
   top: 20px;
   left: 325px;
   padding: 9px 20px;
@@ -95,23 +99,28 @@ li {
   padding: 15px;
   color: grey;
 }
-.card-body {
-  height: auto;
-}
-.col-md-2 {
-  text-align: center;
+
+.temp-buttons .active {
+  color: rgb(1, 68, 126);
+  cursor: default;
 }
 
-.icon {
-  font-size: 30px;
-  padding: 20px;
-  color: white;
+#fahrenheit-link {
+  text-decoration: none;
+}
+#celsius-link {
+  text-decoration: none;
+}
+
+.card-body {
+  height: auto;
 }
 
 .container {
   margin: 30px auto;
 }
-.col-md-2 {
+.col-lg-2 {
+  text-align: center;
   color: white;
   font-weight: 600;
   padding: 20px;
@@ -130,4 +139,9 @@ li {
 }
 .btn {
   color: rgba(255, 255, 255, 0.5);
+}
+
+#icon {
+  display: block;
+  margin: 0 auto;
 }
