@@ -95,7 +95,6 @@ function showWeather(response) {
   );
 
   let dateElement = document.querySelector("#time");
-  //dateElement.innerHTML = formatDate;
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
 }
 
